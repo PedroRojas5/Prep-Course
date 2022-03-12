@@ -42,10 +42,10 @@ function forEach(array, cb) {
   // Pista: Estarás invocando a `cb` varias veces (una por cada valor en la matriz)
   //Tu código: 
   //2 formas de hacerlo:
-  //array.forEach(function(ele){
-  //  cb(ele)
-  //})
-  array.forEach(ele=>cb(ele))
+  array.forEach(function(ele){
+    cb(ele)
+  })
+  //array.forEach(ele=>cb(ele))
 }
 
 function map(array, cb) {
